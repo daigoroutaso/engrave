@@ -1,0 +1,40 @@
+/* コンテンツが少ない時もフッターを画面下に表示する指定 */
+#app{ 
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+main{
+    flex: 1;
+}
+
+footer{
+    text-align: center;
+    padding: 26px 0;
+}
+
+footer p {
+    color :#fff;
+    font-size: 0.875rem;
+}
+
+#preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 300px;
+}
+
+#preview .keyword{
+    color:#ffffff;
+}
+#preview .name{
+    color:#ffffff;
+}
