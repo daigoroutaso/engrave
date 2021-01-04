@@ -2011,6 +2011,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -44779,7 +44784,7 @@ var render = function() {
         on: { click: _vm.pushLike }
       },
       [
-        _vm._v("\n        いいね！"),
+        _vm._v("\n        なるほど！"),
         _c("span", { staticClass: "badge badge-success badge-light" }, [
           _vm._v(_vm._s(_vm.likeCnt))
         ])
@@ -44810,64 +44815,68 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
-    _c("div", { staticClass: "row justify-content-center" }, [
+    _c("div", { staticClass: "row p-3 justify-content-center" }, [
       _c("div", { staticClass: "col-md-6" }, [
         _c(
           "label",
-          {
-            staticClass: "col-md-4 col-form-label text-md-right",
-            attrs: { for: "keyword" }
-          },
-          [_vm._v("名言")]
+          { staticClass: "col-form-label mr-3", attrs: { for: "name" } },
+          [_vm._v("お名前")]
         ),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md-6" }, [
-          _c("input", {
-            staticClass: "form-control ",
-            attrs: {
-              id: "keyword",
-              type: "text",
-              name: "keyword",
-              placeholder: "人生山あり山あり",
-              autofocus: ""
-            },
-            on: { input: _vm.onKeywordInput }
-          })
-        ]),
-        _vm._v(" "),
+        _c("input", {
+          staticClass: "form-control",
+          attrs: {
+            id: "name",
+            type: "text",
+            name: "name",
+            placeholder: "名無しの偉人",
+            autofocus: ""
+          },
+          on: { input: _vm.onNameInput }
+        })
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row p-3 justify-content-center" }, [
+      _c("div", { staticClass: "col-md-6" }, [
         _c(
           "label",
-          {
-            staticClass: "col-md-4 col-form-label text-md-right",
-            attrs: { for: "name" }
-          },
-          [_vm._v("名前")]
+          { staticClass: "col-form-label mr-3", attrs: { for: "keyword" } },
+          [_vm._v("人生の名言")]
         ),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md-6" }, [
-          _c("input", {
-            staticClass: "form-control ",
-            attrs: {
-              id: "name",
-              type: "text",
-              name: "name",
-              placeholder: "名無しの偉人",
-              autofocus: ""
-            },
-            on: { input: _vm.onNameInput }
-          })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-8 offset-md-4" }, [
-          _c(
-            "button",
-            { staticClass: "btn btn-primary", on: { click: _vm.postText } },
-            [_vm._v("\n                    作成\n                ")]
-          )
-        ])
-      ]),
-      _vm._v(" "),
+        _c("input", {
+          staticClass: "form-control",
+          attrs: {
+            id: "keyword",
+            type: "text",
+            name: "keyword",
+            placeholder: "人生山あり山あり",
+            autofocus: ""
+          },
+          on: { input: _vm.onKeywordInput }
+        })
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row p-3 justify-content-center" }, [
+      _c("div", { staticClass: "col-md-6 text-right" }, [
+        _c(
+          "button",
+          { staticClass: "btn btn-primary", on: { click: _vm.postText } },
+          [_vm._v("\n                作成\n            ")]
+        )
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row p-3 justify-content-center" }, [
       _c("div", { staticClass: "col-md-6" }, [
+        _c(
+          "label",
+          { staticClass: "col-form-label mr-3", attrs: { for: "preview" } },
+          [_vm._v("プレビュー")]
+        ),
+        _vm._v(" "),
         _c("div", { attrs: { id: "preview" } }, [
           _c("p", { staticClass: "keyword" }, [_vm._v(_vm._s(_vm.keyword))]),
           _vm._v(" "),

@@ -1,22 +1,27 @@
 <template>
 <div class="container">
-    <div class="row justify-content-center">
+    <div class="row p-3 justify-content-center">
         <div class="col-md-6">
-            <label for="keyword" class="col-md-4 col-form-label text-md-right">名言</label>
-            <div class="col-md-6">
-                <input id="keyword" @input="onKeywordInput" type="text" class="form-control " name="keyword" placeholder="人生山あり山あり" autofocus>
-            </div>
-            <label for="name" class="col-md-4 col-form-label text-md-right">名前</label>
-            <div class="col-md-6">
-                <input id="name" @input="onNameInput" type="text" class="form-control " name="name" placeholder="名無しの偉人" autofocus>
-            </div>
-            <div class="col-md-8 offset-md-4">
-                <button v-on:click="postText" class="btn btn-primary">
-                    作成
-                </button>
-            </div>
+            <label for="name" class="col-form-label mr-3">お名前</label>
+            <input id="name" @input="onNameInput" type="text" class="form-control" name="name" placeholder="名無しの偉人" autofocus>
         </div>
+    </div>
+    <div class="row p-3 justify-content-center">
         <div class="col-md-6">
+            <label for="keyword" class="col-form-label mr-3">人生の名言</label>
+            <input id="keyword" @input="onKeywordInput" type="text" class="form-control" name="keyword" placeholder="人生山あり山あり" autofocus>
+        </div>
+    </div>
+    <div class="row p-3 justify-content-center">
+        <div class="col-md-6 text-right">
+            <button v-on:click="postText" class="btn btn-primary">
+                作成
+            </button>
+        </div>
+    </div>
+    <div class="row p-3 justify-content-center">
+        <div class="col-md-6">
+            <label for="preview" class="col-form-label mr-3">プレビュー</label>
             <div id="preview">
                 <p class="keyword">{{keyword}}</p>
                 <p class="name">{{name}}</p>

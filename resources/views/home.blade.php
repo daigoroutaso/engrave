@@ -3,16 +3,42 @@
 
 {{-- キャッチコピー、サービス概要、登録画面遷移ボタン--}}
 <div class="jumbotron">
-    <h1>あなたの人生の名言を偉人風に彩ろう</h1>
-    <h2>キーワードと名前を入力すると偉人の名言風カードが作れるサービスです</h2>
-    TODO:イラストが欲しい
-    <a class="btn btn-primary btn-block" href="/entry" role="button">作成する</a>
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1 class="main-title">あなたの人生の名言を偉人風に刻もう</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="{{ asset('slide1.png') }}" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="{{ asset('slide2.png') }}" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="{{ asset('slide3.png') }}" alt="Third slide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <h4 class="sub-title">キーワードと名前を入力すると偉人の名言風にカードが作成できるサービスです</h4>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <a class="btn btn-primary btn-lg btn-block " href="/entry" role="button">名言を刻む</a>
+            </div>
+        </div>
+    </div>
 </div>        
 
+{{--
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-10">
-{{--
             <div class="row justify-content-center my-4">
                 <p class="h3">最近の名言</p>
             </div>
@@ -40,8 +66,7 @@
                     </div>
                 @endif
             @endforeach
---}}
-        {{--
+
             <div class="row justify-content-center">
                 <nav aria-label="Page navigation example">
                     <ul class="pagination">
@@ -53,9 +78,10 @@
                     </ul>
                 </nav>
             </div>
-        --}}
+
         </div>
     </div>
 </div>
+--}}
 
 @endsection

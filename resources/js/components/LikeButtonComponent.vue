@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <button type="button" class="btn btn-success rounded-pill " v-on:click="pushLike">
-            いいね！<span class="badge badge-success badge-light">{{likeCnt}}</span>
+            なるほど！<span class="badge badge-success badge-light">{{likeCnt}}</span>
         </button>
     </div>
 </template>
